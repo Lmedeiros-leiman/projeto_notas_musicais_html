@@ -1,0 +1,37 @@
+body
+    display: flex
+    align-items: center
+    justify-content: center
+    min-height: 100vh
+    max-height: 100vh
+    overflow: hidden
+
+    .container
+        width: 90vw
+        height: 200px
+        position: relative
+
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 1vw
+
+        div
+            width: 120px
+            height: 2vh
+            border-radius: 100px
+            background-color: green
+            animation: CresceEncolhe 2s ease-in-out
+            animation-iteration-count: infinite
+        
+        div:nth-child( 2n )
+            background-color: pink
+        
+        div:nth-child(2n + 1)
+            background-color: violet              
+
+@keyframes CresceEncolhe
+    50%
+        height: 90vh
+    
+        
